@@ -1,0 +1,42 @@
+{
+    "name": "alvaroomatech/oma-quotes",
+    "description": "",
+    "keywords": [
+        "alvaroomatech",
+        "oma-quotes"
+    ],
+    "homepage": "https://github.com/alvaroomatech/oma-quotes",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alvaro Aguilar",
+            "email": "aaguilar@omatech.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlvaroOmatech\\OmaQuotes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlvaroOmatech\\OmaQuotes\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
